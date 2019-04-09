@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title> 
+</head>
+
+<body>
+
+
+<canvas id="myCanvas" width="700" height="400">
+</canvas>
+
+<script>
+//$.ajax({
+//	url: "omok/1",
+//	datatype: 'json',
+//	success: function(data){ 
+window.onload = function () {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+//원그리기
+//x좌표:200, y좌표:150, 반지름:50, 시작각도 0, 종료각도:360도, 시계반대방향
+context.beginPath();
+context.arc(300, 350, 50, 0, 2 * Math.PI, false);
+context.stroke();
+};
+//}
+//});
+ 
+</script>
+</body>
+</html>
